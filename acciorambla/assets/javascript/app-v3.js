@@ -84,7 +84,6 @@ window.addEventListener('load', function () {
         autoHeight: true,
         loop: true,
         nav: false,
-        lazyLoad: true,
     });
 
     // Go to the next item
@@ -111,7 +110,6 @@ window.addEventListener('load', function () {
         autoHeight: true,
         loop: true,
         nav: false,
-        lazyLoad: true,
     });
 
     // Go to the next item
@@ -139,6 +137,7 @@ window.addEventListener('load', function () {
         loop: true,
         nav: false,
         lazyLoad: true,
+        lazyLoadEager: 1
     });
 
     // Go to the next item
