@@ -703,7 +703,8 @@ section {
                 z-index: 1;
                 margin: 0 auto;
                 @media (max-width: $media__device_tablet_width) {
-                    min-height: calc(100vh - 80px - 40px); // 80px is the top part, 40px is the menu
+                    height: calc(100vh - 80px - 40px); // 80px is the top part, 40px is the menu
+                    min-height: 500px;
                 }
             }
         }

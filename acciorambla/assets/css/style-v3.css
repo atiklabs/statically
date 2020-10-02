@@ -1098,7 +1098,8 @@ section {
 }
 @media (max-width: 1024px) {
   .red-section-main .slide .quote-image img {
-    min-height: calc(100vh - 80px - 40px);
+    height: calc(100vh - 80px - 40px);
+    min-height: 500px;
   }
 }
 .red-section-main .slide .quote {
@@ -1423,4 +1424,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=style-v2.css.map */
+/*# sourceMappingURL=style-v3.css.map */
