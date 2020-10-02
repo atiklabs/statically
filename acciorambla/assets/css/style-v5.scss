@@ -275,6 +275,11 @@ section {
 
 /*    Cover section - La Rambla JA!   */
 
+#larambla {
+    @media (min-width: $media__device_tablet_width) {
+        min-height: 800px;
+    }
+}
 
 #cover-top-ara-mes-que-mai {
     color: $color__text_blue;

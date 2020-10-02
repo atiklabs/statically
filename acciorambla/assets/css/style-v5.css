@@ -646,6 +646,12 @@ section {
 }
 
 /*    Cover section - La Rambla JA!   */
+@media (min-width: 1024px) {
+  #larambla {
+    min-height: 800px;
+  }
+}
+
 #cover-top-ara-mes-que-mai {
   color: #0961FF;
 }
@@ -1424,4 +1430,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=style-v4.css.map */
+/*# sourceMappingURL=style-v5.css.map */
