@@ -1,0 +1,106 @@
+
+// Font and typographic mixins and variables
+
+@font-face {
+    font-family: 'Digital';
+    src: url('../fonts/Digital.ttf') format('truetype');
+    //font-weight: 400;
+    //font-style: normal;
+}
+
+@mixin font__title {
+    font-family: "Champion Featherwt A", "Champion Featherwt B", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font__link {
+    font-family: "Champion Lightwt A", "Champion Lightwt B", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font__days {
+    font-family: 'Digital', sans-serif;
+}
+
+@mixin font__text1 {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+// Font sizes for desktop
+$font__size_cover_top: 220px;
+$font__line_height_cover_top: 200px;
+
+$font__size_top: 150px;
+
+$font__size_top_digital: 172px;
+
+$font__size_title1: 665px;
+
+$font__size_title2: 200px;
+$font__line_height_title2: 180px;
+
+$font__size_menu: 20px;
+
+$font__size_text: 30px;
+$font__line_height_text: 34px;
+
+$font__size_cursor_seguent: 100px;
+$font__size_link: 46px;
+
+$font__size_quote: 80px;
+$font__line_height_quote: 75px;
+
+$font__size_quote_name: 80px;
+
+$font__size_sign: 60px;
+
+$font__size_footer: 46px;
+
+// Font sizes for mobile
+$font__size_mobile_cover_top: 80px;
+$font__line_height_mobile_cover_top: 80px;
+
+$font__size_mobile_top: 70px;
+
+$font__size_mobile_top_digital: 80px;
+
+$font__size_mobile_title1: 480px;
+
+$font__size_mobile_title2: 70px;
+$font__line_height_mobile_title2: 65px;
+
+$font__size_menu: 20px;
+
+$font__size_mobile_text: 20px;
+$font__line_height_mobile_text: 22px;
+
+$font__size_mobile_cursor_seguent: 30px;
+$font__line_height_mobile_cursor_seguent: 30px;
+
+$font__size_mobile_link: 30px;
+
+$font__size_mobile_quote: 40px;
+$font__line_height_mobile_quote: 40px;
+
+$font__size_mobile_quote_name: 40px;
+
+$font__size_mobile_sign: 30px;
+
+$font__size_mobile_footer: 20px;
+
+// Font sizes for tablet
+$font__size_tablet_title2: 120px;
+$font__line_height_tablet_title2: 110px;
+
+$font__size_tablet_text: 30px;
+$font__line_height_tablet_text: 33px;
+
+$font__size_tablet_quote: 60px;
+$font__line_height_tablet_quote: 60px;
+
+
+

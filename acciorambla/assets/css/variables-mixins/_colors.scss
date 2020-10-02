@@ -1,0 +1,30 @@
+
+// Backgrounds
+$color__background_top_black: #000;
+$color__background_footer_black: #000;
+$color__background_main_red: #E00914;
+$color__background_main_blue: #0961FF;
+$color__background_main_orange: #FF8900;
+$color__background_main_green: #14AA20;
+$color__background_main_yellow: #FFDB20;
+$color__background_main_white: #FFF;
+
+// Text
+$color__text_white: #FFF;
+$color__text_black: #000;
+$color__text_red: #E00914;
+$color__text_blue: #0961FF;
+$color__text_orange: #FF8900;
+$color__text_green: #14AA20;
+$color__text_yellow: #FFDB20;
+
+
+// Links
+$color__link: #FFF;
+$color__link_hover: darken( $color__link, 50% );
+$color__button: #000;
+$color__cursor_seguent: #FFF;
+$color__cursor_seguent_hover: darken( $color__cursor_seguent, 10% );
+
+// Borders
+$color__button_border: #FFF;

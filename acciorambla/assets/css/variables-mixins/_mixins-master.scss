@@ -1,0 +1,78 @@
+/* Main text */
+
+@import "colors";
+@import "fonts";
+@import "structure";
+
+@mixin text_container_width {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 40px;
+    @media (max-width: $media__device_tablet_width) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@mixin list_cleaning {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin simple_text_link {
+    text-decoration: none;
+    @include font__text1;
+    font-size: $font__size_text;
+    line-height: $font__line_height_text;
+    color: $color__text_white;
+    margin: 0;
+    padding: 0;
+    &:hover {
+        color: $color__text_black;
+    }
+
+    @media (max-width: $media__device_tablet_width) and (min-width: $media__device_mobile_width) {
+        font-size: $font__size_tablet_text;
+        line-height: $font__line_height_tablet_text;
+    }
+
+    @media (max-width: $media__device_mobile_width) {
+        font-size: $font__size_mobile_text;
+        line-height: $font__line_height_mobile_text;
+    }
+}
+
+@mixin call-to-action-button {
+    text-decoration: none;
+    @include font__title;
+    font-size: $font__size_sign;
+    line-height: $font__size_sign;
+    font-weight: normal;
+    color: $color__text_black;
+    margin: 0;
+    padding: 24px 22px 15px 26px;
+    border: solid 1px $color__button;
+    &:hover {
+        background: $color__background_footer_black;
+        color: $color__text_yellow;
+    }
+    @media (max-width: $media__device_tablet_width) {
+        font-size: $font__size_mobile_sign;
+        line-height: $font__size_mobile_sign;
+        padding: 9px 8px 7px 11px;
+    }
+}
+
+/* enable or disable animations */
+@mixin animation_enable {
+    //animation: none;
+}
+$animation_duration_larambla: 20s;
+$animation_duration_larambla_title: 20s;
+$animation_duration_situacio: 20s;
+$animation_duration_proposta: 20s;
+$animation_duration_problema: 20s;
+$animation_duration_suport: 20s;
+$animation_duration_signa: 20s;
+$animation_duration_footer: 20s;

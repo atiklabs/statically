@@ -1,1 +1,3 @@
-# statically
+# Statically
+
+https://statically.io/
