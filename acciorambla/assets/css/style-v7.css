@@ -414,9 +414,10 @@ html, body {
   font-family: "Champion Lightwt A", "Champion Lightwt B", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 25px;
   color: #FFF;
+  letter-spacing: 0.02em;
 }
 #navbar .navbar-nav a:hover {
   color: #000;

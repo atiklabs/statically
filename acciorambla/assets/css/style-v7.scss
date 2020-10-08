@@ -75,6 +75,7 @@ html, body {
             font-size: $font__size_menu;
             line-height: $font__size_menu;
             color: $color__text_white;
+            letter-spacing: 0.02em;
 
             &:hover {
                 color: $color__text_black;
@@ -99,8 +100,8 @@ html, body {
             a {
                 text-decoration: none;
                 @include font__link;
-                font-size: $font__size_menu;
-                line-height: $font__size_menu;
+                font-size: $font__size_mobile_menu;
+                line-height: $font__size_mobile_menu;
                 font-weight: normal;
                 color: $color__text_black;
                 padding-right: 7px;
