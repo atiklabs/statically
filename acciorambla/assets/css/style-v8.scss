@@ -75,6 +75,7 @@ html, body {
             font-size: $font__size_menu;
             line-height: $font__size_menu;
             color: $color__text_white;
+            letter-spacing: 0.02em;
 
             &:hover {
                 color: $color__text_black;
@@ -99,8 +100,8 @@ html, body {
             a {
                 text-decoration: none;
                 @include font__link;
-                font-size: $font__size_menu;
-                line-height: $font__size_menu;
+                font-size: $font__size_mobile_menu;
+                line-height: $font__size_mobile_menu;
                 font-weight: normal;
                 color: $color__text_black;
                 padding-right: 7px;
@@ -146,6 +147,7 @@ section {
     position: relative;
     margin: 0;
     padding: 0;
+    cursor: default;
 
     @media (max-width: $media__device_tablet_width) {
         height: $height__mobile_top_section;
@@ -256,7 +258,21 @@ section {
     }
 }
 
-#seguent-cursor-proposal, #seguent-cursor-suport, #seguent-cursor-larambla{
+#seguent-cursor-larambla, #seguent-cursor-suport {
+    display: none;
+    position: absolute;
+    margin: -30px 0 0 -50px;
+    @include font__title;
+    z-index: 999;
+    cursor: none;
+
+    @media (max-width: $media__device_tablet_width) {
+        display: none !important;
+        cursor: initial;
+    }
+}
+
+#seguent-cursor-proposal {
     display: none;
     position: absolute;
     margin: -45px 0 0 -95px;
@@ -276,7 +292,10 @@ section {
 /*    Cover section - La Rambla JA!   */
 
 #larambla {
+    background: $color__background_main_blue;
     @media (min-width: $media__device_tablet_width) {
+        background: $color__background_main_blue;
+        background: linear-gradient(180deg, $color__background_top_black 25%, $color__background_main_blue 0%);
         min-height: 800px;
     }
 }
@@ -318,19 +337,11 @@ section {
 
         @media (max-width: $media__device_tablet_width) {
             position: absolute;
-            @include font__link;
             display: block;
-            font-size: $font__size_mobile_cursor_seguent;
-            line-height: $font__line_height_mobile_cursor_seguent;
-            color: $color__text_white;
             bottom: 0;
             left: 50%;
             transform: translate(-50%, 0);
-            padding-bottom: 15px;
-
-            &:hover {
-                color: $color__text_black;
-            }
+            padding-bottom: 20px;
         }
     }
 }
@@ -547,13 +558,8 @@ section {
 
             }
             @media (max-width: $media__device_tablet_width) {
-                @include font__link;
                 display: block;
-                margin-top: 10px;
-                font-size: $font__size_mobile_cursor_seguent;
-                line-height: $font__line_height_mobile_cursor_seguent;
-                color: $color__text_white;
-                text-align: center;
+                margin-top: 3px;
 
                 &:hover {
                     color: $color__text_black;
@@ -606,6 +612,11 @@ section {
             bottom: 14px;
         }
     }
+}
+
+.owl-carousel .owl-item img {
+    width: initial;
+    margin: 0 auto;
 }
 
 
@@ -782,7 +793,7 @@ section {
             width: 972px;
             bottom: 0;
             left: 0;
-            padding-bottom: 25px;
+            padding-bottom: 20px;
             padding-left: 35px;
 
             @media (max-width: $media__device_tablet_width) and (min-width: $media__device_mobile_width) {
@@ -833,7 +844,7 @@ section {
             text-align: left;
             bottom: 0;
             left: 0;
-            padding-bottom: 25px;
+            padding-bottom: 20px;
             padding-left: 35px;
         }
 

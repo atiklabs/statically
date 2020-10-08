@@ -414,9 +414,10 @@ html, body {
   font-family: "Champion Lightwt A", "Champion Lightwt B", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 25px;
   color: #FFF;
+  letter-spacing: 0.02em;
 }
 #navbar .navbar-nav a:hover {
   color: #000;
@@ -483,6 +484,7 @@ section {
   position: relative;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 @media (max-width: 1024px) {
   .top {
@@ -626,7 +628,24 @@ section {
   }
 }
 
-#seguent-cursor-proposal, #seguent-cursor-suport, #seguent-cursor-larambla {
+#seguent-cursor-larambla, #seguent-cursor-suport {
+  display: none;
+  position: absolute;
+  margin: -30px 0 0 -50px;
+  font-family: "Champion Featherwt A", "Champion Featherwt B", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 999;
+  cursor: none;
+}
+@media (max-width: 1024px) {
+  #seguent-cursor-larambla, #seguent-cursor-suport {
+    display: none !important;
+    cursor: initial;
+  }
+}
+
+#seguent-cursor-proposal {
   display: none;
   position: absolute;
   margin: -45px 0 0 -95px;
@@ -639,15 +658,20 @@ section {
   cursor: none;
 }
 @media (max-width: 1024px) {
-  #seguent-cursor-proposal, #seguent-cursor-suport, #seguent-cursor-larambla {
+  #seguent-cursor-proposal {
     display: none !important;
     cursor: initial;
   }
 }
 
 /*    Cover section - La Rambla JA!   */
+#larambla {
+  background: #0961FF;
+}
 @media (min-width: 1024px) {
   #larambla {
+    background: #0961FF;
+    background: linear-gradient(180deg, #000 25%, #0961FF 0%);
     min-height: 800px;
   }
 }
@@ -689,20 +713,11 @@ section {
 @media (max-width: 1024px) {
   .cover-section-main .larambla-seguent-mobile {
     position: absolute;
-    font-family: "Champion Lightwt A", "Champion Lightwt B", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     display: block;
-    font-size: 30px;
-    line-height: 30px;
-    color: #FFF;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    padding-bottom: 15px;
-  }
-  .cover-section-main .larambla-seguent-mobile:hover {
-    color: #000;
+    padding-bottom: 20px;
   }
 }
 
@@ -930,15 +945,8 @@ section {
 }
 @media (max-width: 1024px) {
   .orange-section-main .slide .proposal-seguent-mobile {
-    font-family: "Champion Lightwt A", "Champion Lightwt B", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     display: block;
-    margin-top: 10px;
-    font-size: 30px;
-    line-height: 30px;
-    color: #FFF;
-    text-align: center;
+    margin-top: 3px;
   }
   .orange-section-main .slide .proposal-seguent-mobile:hover {
     color: #000;
@@ -989,6 +997,11 @@ section {
   .orange-section-main .proposal-link:last-of-type {
     bottom: 14px;
   }
+}
+
+.owl-carousel .owl-item img {
+  width: initial;
+  margin: 0 auto;
 }
 
 /*    Green section - Problema    */
@@ -1430,4 +1443,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=style-v6.css.map */
+/*# sourceMappingURL=style-v8.css.map */
