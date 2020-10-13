@@ -1142,15 +1142,15 @@ section {
 }
 @media (max-width: 1024px) and (min-width: 480px) {
   .red-section-main .slide .quote {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 }
 @media (max-width: 480px) {
   .red-section-main .slide .quote {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 }
