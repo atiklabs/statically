@@ -703,6 +703,7 @@ section {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #e78f8e;
 
     .slide {
         height: $height__main_section;
@@ -713,15 +714,25 @@ section {
         }
 
         .quote-image {
+            @media (max-width: $media__device_tablet_width) {
+                display: none;
+            }
+
             img {
                 width: 100%;
                 height: auto;
                 z-index: 1;
                 margin: 0 auto;
-                @media (max-width: $media__device_tablet_width) {
-                    height: calc(100vh - 80px - 40px); // 80px is the top part, 40px is the menu
-                    min-height: 500px;
-                }
+            }
+        }
+
+        .quote-image-mobile {
+            @media (min-width: $media__device_tablet_width + 1) {
+                display: none;
+            }
+
+            img {
+                width: 100%;
             }
         }
 
@@ -770,18 +781,20 @@ section {
 
             @media (max-width: $media__device_tablet_width) and (min-width: $media__device_mobile_width) {
                 text-align: center;
-                top: 50%;
+                top: initial;
+                bottom: 60px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0);
                 width: 100%;
                 padding: 0 20px;
             }
 
             @media (max-width: $media__device_mobile_width) {
                 text-align: center;
-                top: 50%;
+                top: initial;
+                bottom: 60px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0);
                 width: 100%;
                 padding: 0 20px;
             }
@@ -798,20 +811,18 @@ section {
 
             @media (max-width: $media__device_tablet_width) and (min-width: $media__device_mobile_width) {
                 text-align: center;
-                bottom: initial;
-                top: 50%;
+                bottom: 60px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0);
                 width: 100%;
                 padding: 0 20px;
             }
 
             @media (max-width: $media__device_mobile_width) {
                 text-align: center;
-                bottom: initial;
-                top: 50%;
+                bottom: 60px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0);
                 width: 100%;
                 padding: 0 20px;
             }
@@ -882,10 +893,6 @@ section {
         height: $height__main_section;
         left: 50%;
         transform: translate(-50%, 0);
-    }
-
-    @media (max-width: $media__device_tablet_width) {
-        height: calc(100vh - 80px - 40px);
     }
 }
 

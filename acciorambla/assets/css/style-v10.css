@@ -1179,9 +1179,10 @@ section {
 @media (max-width: 1024px) and (min-width: 480px) {
   .red-section-main .slide .quote-right {
     text-align: center;
-    top: 50%;
+    top: initial;
+    bottom: 60px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 0 20px;
   }
@@ -1189,9 +1190,10 @@ section {
 @media (max-width: 480px) {
   .red-section-main .slide .quote-right {
     text-align: center;
-    top: 50%;
+    top: initial;
+    bottom: 60px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 0 20px;
   }
@@ -1208,10 +1210,9 @@ section {
 @media (max-width: 1024px) and (min-width: 480px) {
   .red-section-main .slide .quote-left {
     text-align: center;
-    bottom: initial;
-    top: 50%;
+    bottom: 60px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 0 20px;
   }
@@ -1219,10 +1220,9 @@ section {
 @media (max-width: 480px) {
   .red-section-main .slide .quote-left {
     text-align: center;
-    bottom: initial;
-    top: 50%;
+    bottom: 60px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 0 20px;
   }
@@ -1446,4 +1446,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=style-v9.css.map */
+/*# sourceMappingURL=style-v10.css.map */
